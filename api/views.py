@@ -27,6 +27,6 @@ class RestaurantUpdateView(UpdateAPIView):
 # Complete me
 class RestaurantDeleteView(DestroyAPIView):
 	queryset = Restaurant.objects.all()
-	#serializer_class = RestaurantListSerializer
+	serializer_class = RestaurantListSerializer
 	lookup_field = 'id'
 	lookup_url_kwarg = 'restaurant_id'
